@@ -1,0 +1,55 @@
+/* Define your styles based on the Tailwind CSS classes */
+.Primary-button {
+    font-size: 0.875rem; /* Tailwind class: text-sm */
+    font-weight: bold; /* Tailwind class: font-bold */
+    border-radius: 0.25rem; /* Tailwind class: rounded-md */
+    padding: 0.5rem 1rem; /* Tailwind class: px-2 py-1 */
+    color: #f7fafc; /* Tailwind class: text-gray-100 */
+    cursor: pointer; /* Tailwind class: cursor-pointer */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out; /* Tailwind class: transition duration-150 ease-in-out */
+    outline: none; /* Tailwind class: focus:outline-none */
+    border: 1px solid transparent; /* Tailwind class: focus:border-gray-300 */
+  }
+  
+  .Primary-button:hover {
+    color: #000; /* Tailwind class: hover:text-black */
+    background-color: #e2e8f0; /* Tailwind class: hover:bg-gray-300 */
+  }
+  
+  .Primary-button:active {
+    background-color: #cbd5e0; /* Tailwind class: active:bg-gray-400 */
+  }
+  
+  /* You can add more styles based on your design needs */
+  /* Define your styles based on the Tailwind CSS classes */
+.Primary-icon-button {
+    display: flex; /* Tailwind class: flex */
+    justify-content: center; /* Tailwind class: justify-center */
+    align-items: center; /* Tailwind class: items-center */
+    border-radius: 0.25rem; /* Tailwind class: rounded-md */
+    background-color: #edf2f7; /* Tailwind class: bg-gray-200 */
+    color: #000; /* Tailwind class: text-black */
+    line-height: 1.5; /* Tailwind class: leading-normal */
+    text-transform: uppercase; /* Tailwind class: uppercase */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tailwind class: shadow-md */
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Tailwind class: transition duration-150 ease-in-out */
+    width: 12rem; /* Tailwind class: w-48 */
+    height: 2.5rem; /* Tailwind class: h-10 */
+    border: none;
+    outline: none; /* Tailwind class: focus:outline-none */
+    cursor: pointer; /* Tailwind class: focus:ring-0 */
+  }
+  
+  .Primary-icon-button:hover {
+    background-color: #e2e8f0; /* Tailwind class: hover:bg-gray-300 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind class: hover:shadow-lg */
+  }
+  
+  .Primary-icon-button:focus,
+  .Primary-icon-button:active {
+    background-color: #cbd5e0; /* Tailwind class: focus:bg-gray-300, active:bg-gray-400 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind class: focus:shadow-lg, active:shadow-lg */
+  }
+  
+  /* You can add more styles based on your design needs */
+  

@@ -1,0 +1,30 @@
+/* Add this to your CSS file */
+
+
+  /* Optional: If you want to center the text as well */
+  .vertical-timeline-element--work p {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+
+  .vertical-timeline-element-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .vertical-timeline-element--work-line {
+    color: black;
+  }
+
+  
+  @media (max-width: 1170px) {
+    .vertical-timeline-element--work {
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+ 
+  }
+  

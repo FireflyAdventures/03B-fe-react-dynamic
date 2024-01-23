@@ -1,0 +1,40 @@
+/* Define your styles based on the Tailwind CSS classes */
+.Footer-container {
+    bottom: 0;
+    background-color: #4a5568; /* Tailwind class: bg-slate-400 */
+    color: #fff; /* Tailwind class: text-white */
+    padding: 1.5rem; /* Tailwind class: py-6 px-6 */
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind class: shadow-lg shadow-black */
+    height: 12rem; /* Tailwind class: h-48 */
+  }
+  
+  .Footer-logo-container {
+    display:grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+  }
+  
+  .Footer-logo-img {
+    object-fit: fill;
+    height: 100%; /* Tailwind class: h-full */
+    width: 100%; /* Tailwind class: w-full */
+  }
+  
+  .Footer-link-container {
+    background-color: #4a5568; /* Tailwind class: bg-slate-400 */
+    margin: auto;
+    color: #fff; /* Tailwind class: text-white */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .Footer-button {
+    margin-left: 1.25rem; /* Tailwind class: ml-5 */
+  }
+  
+  /* You can add more styles based on your design needs */
+  
+  

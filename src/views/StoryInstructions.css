@@ -1,0 +1,161 @@
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .StoryInstructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.StoryInstructions-header-text {
+  font-size: calc(
+    12px + 1.3vw
+  ); /* Responsive font size based on viewport width */
+  font-size: 2.55vmax;
+  margin-left: 20px;
+  margin-right: 25px;
+  flex: 1;
+  font-family: 'lex', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 880px) {
+  .StoryInstructions-header-text {
+    font-size: calc(
+      8px + 1.3vw
+    ); /* Responsive font size based on viewport width */
+    font-size: 1.65vmax;
+  }
+}
+
+.StoryInstructions-mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 4rem;
+  max-width: 90rem;
+  margin: auto;
+}
+
+.StoryInstructions-mission-text {
+  font-size: calc(
+    12px + 1.3vw
+  ); /* Responsive font size based on viewport width */
+  font-size: 4vmax;
+  font-family: 'lex', sans-serif;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-bottom: 48px;
+}
+
+.StoryInstructions-text {
+  font-size: calc(
+    10px + 1.3vw
+  ); /* Responsive font size based on viewport width */
+  font-size: 4vmax;
+  font-family: 'lex', sans-serif;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-bottom: -32px;
+}
+@media screen and (max-width: 880px) {
+  .StoryInstructions-mission-text {
+    font-size: calc(
+      8px + 1.3vw
+    ); /* Responsive font size based on viewport width */
+    font-size: 3vmax;
+  }
+}
+
+.StoryInstructions-header-img-img {
+  width: 100%;
+  max-width:50rem;
+  height: 330px; /* Adjust as needed */
+  border-radius: 0% 20% 60% 60%;
+  object-fit: cover;
+}
+
+.StoryInstructions-header-image-container {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #474d57;
+  padding-bottom: 20px;
+  width:100%;
+  background: linear-gradient(
+    220deg,
+    transparent,
+    #474d57
+  );
+}
+
+.StoryInstructions-header-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Adjust the height of the wave */
+  background: linear-gradient(
+    180deg,
+    transparent,
+    #282c34
+  ); /* Adjust the color as needed */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.StoryInstructions-mission-span {
+  display: flex;
+  text-align: left;
+  font-family: 'thin', sans-serif;
+  font-size: large;
+  padding: 0 16px;
+  margin-bottom: 3rem;
+  margin-left: 32px;
+  margin-right:32px;
+  color: rgba(255, 255, 255, 0.828)
+}
+
+.StoryInstructions-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+.Founding-image-container {
+  width: 50%;
+  height: fit-content;
+  position: relative;
+  padding: 12px 0;
+}
+
+.Founding-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0% 40% 0% 80%;
+}
+
+.Founding-text {
+  position: absolute;
+  background-color: #536878;
+  padding: 2px;
+  border-radius: 20px;
+  bottom: -12px;
+  font-family: 'lex', sans-serif;
+  font-weight: bold;
+}
+
+/* Set the position of the scrollbar relative to the top */

@@ -1,0 +1,54 @@
+/* Define your styles based on the Tailwind CSS classes */
+.Main-container {
+    display: flex; /* Tailwind class: flex */
+  }
+  
+  .Main-nav-container {
+    width: 100%; /* Tailwind class: w-full */
+    display: flex; /* Tailwind class: flex */
+    flex-direction: column; /* Tailwind class: flex-col */
+    position: relative; /* Tailwind class: relative */
+  }
+  
+  .Main-children-container {
+    flex-grow: 1; /* Tailwind class: flex-grow */
+    position: relative; /* Tailwind class: relative */
+    background-color: #f7fafc; /* Tailwind class: bg-gray-100 */
+    overflow: hidden; /* Tailwind class: overflow-hidden */
+  }
+  
+  /* You can add more styles based on your design needs */
+  .Vision-text {
+    font-size: calc(
+      12px + 1.3vw
+    ); /* Responsive font size based on viewport width */
+    font-size: 4vmax;
+    font-family: 'lex', sans-serif;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-bottom: -32px;
+  }
+
+  .Vision-layout {
+    display: flex; /* Tailwind class: flex */
+    flex-direction: column; /* Tailwind class: flex-col */
+    margin: 20px; /* Tailwind class: mx-20 */
+  }
+
+  /* Define your styles based on the Tailwind CSS classes */
+.Auth-container {
+    display: flex; /* Tailwind class: flex */
+    flex-direction: column; /* Tailwind class: flex-col */
+    align-items: center; /* Tailwind class: items-center */
+    justify-content: center; /* Tailwind class: justify-center */
+    height: 100vh; /* Tailwind class: h-screen */
+  }
+  
+  .Auth-chilren-container {
+    width: 75%; /* Tailwind class: w-3/4 */
+    max-width: 25rem; /* Tailwind class: md:w-1/4 */
+  }
+  
+  /* You can add more styles based on your design needs */
+  
+  

@@ -1,0 +1,23 @@
+/* Define your styles based on the Tailwind CSS classes */
+.Navbar-container {
+    position: sticky;
+    top: 0;
+    background-color: #4a5568; /* Tailwind class: bg-[#4a5568] */
+    color: #fff; /* Tailwind class: text-white */
+    padding: 1.5rem; /* Tailwind class: py-6 px-6 */
+    display: flex;
+    z-index: 10;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind class: shadow-lg shadow-black */
+  }
+  
+  
+  .NavLink-container {
+    color: #fff; /* Tailwind class: text-white */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .Nav-button {
+    margin-left: 1.25rem; /* Tailwind class: ml-5 */
+  }

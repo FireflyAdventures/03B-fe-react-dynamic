@@ -17,5 +17,5 @@ jobs:
 
       - uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          BRANCH: gh-pages
+          BRANCH: main
           FOLDER: build # your output folder name

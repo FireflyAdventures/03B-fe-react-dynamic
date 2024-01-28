@@ -20,7 +20,7 @@ jobs:
 
       - run: yarn build # run build script
 
-      - uses: JamesIves/github-pages-deploy-action@releases/v3
+      - uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           BRANCH: main
           FOLDER: build # your output folder name

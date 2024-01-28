@@ -15,11 +15,19 @@ const NavBar = () => {
         <Link to="https://www.firefly-adventures.com">
           <PrimaryButton className="Nav-button">Home</PrimaryButton>
         </Link>
-        <Link to="/storyline">
-          <PrimaryButton className="Nav-button">
-            Educational Game Demo
-          </PrimaryButton>
+
+        <Link to="/mockup">
+          <PrimaryButton className="Nav-button">Mockup</PrimaryButton>
         </Link>
+
+        <Link to="/storyproblems">
+          <PrimaryButton className="Nav-button">Story Demo</PrimaryButton>
+        </Link>
+
+        <Link to="/aitutor">
+          <PrimaryButton className="Nav-button">AI Tutor Demo</PrimaryButton>
+        </Link>
+
         <Link to="/creatorsportal">
           <PrimaryButton className="Nav-button">
             Creator's Portal Demo

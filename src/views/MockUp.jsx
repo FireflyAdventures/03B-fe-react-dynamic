@@ -4,7 +4,7 @@ import DemoStory from "../components/section/DemoStory";
 import { Story } from "../constants";
 import SimpleChatPrompt from "../components/section/AiChatbot";
 
-const StoryLine = () => {
+const MockUp = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionChange = (option) => {
@@ -30,4 +30,4 @@ const StoryLine = () => {
   );
 };
 
-export default StoryLine;
+export default MockUp;

@@ -7,9 +7,12 @@ import MainLayout from "../layouts/Main";
 //import { AuthContext } from "../contexts/auth";
 // Nonauth Views
 import CreatorsPortal from "../views/CreatorsPortal";
+
+import AITutorPopout from "../views/AITutorPopout";
 // Authenticated Views
 import { Navigate } from "react-router-dom";
-import Storyline from "../views/Storyline";
+import StoryProblems from "../views/StoryProblems";
+import MockUp from "../views/MockUp";
 
 const useRoutes = () => {
   const user = null;
@@ -37,15 +40,35 @@ const useRoutes = () => {
     //   key: '/'
     // },
     {
-      path: "/",
+      path: "/mockup",
       element: (
         <MainLayout>
-          <Storyline />
+          <MockUp />
         </MainLayout>
       ),
-
-      key: "/",
+      key: "/mockUp",
     },
+
+    {
+      path: "/storyproblems",
+      element: (
+        <MainLayout>
+          <StoryProblems />
+        </MainLayout>
+      ),
+      key: "/storyProblems",
+    },
+
+    {
+      path: "/aitutor",
+      element: (
+        <MainLayout>
+          <AITutorPopout />
+        </MainLayout>
+      ),
+      key: "/aiTutor",
+    },
+
     {
       path: "/creatorsportal",
       element: (
@@ -53,9 +76,9 @@ const useRoutes = () => {
           <CreatorsPortal />
         </MainLayout>
       ),
-
       key: "/creatorsPortal",
     },
+
     {
       path: "*",
       element: <Navigate to="/" />,

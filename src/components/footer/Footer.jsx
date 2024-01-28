@@ -27,7 +27,7 @@ const Footer = () => {
       </Link>
 
       <div className="Footer-link-container">
-        <Link to="/">
+        {/* <Link to="/">
           <PrimaryButton className="Footer-button ">Home</PrimaryButton>
         </Link>
         <Link to="/StoryInstructions">
@@ -38,6 +38,26 @@ const Footer = () => {
 
         <Link to="/storyline">
           <PrimaryButton className="Footer-button">Story Demo</PrimaryButton>
+        </Link> */}
+
+        <Link to="https://www.firefly-adventures.com">
+          <PrimaryButton className="Nav-button">Home</PrimaryButton>
+        </Link>
+        <Link to="/mockup">
+          <PrimaryButton className="Nav-button">Mockup</PrimaryButton>
+        </Link>
+
+        <Link to="/game">
+          <PrimaryButton className="Nav-button">Story Demo</PrimaryButton>
+        </Link>
+
+        <Link to="/aitutor">
+          <PrimaryButton className="Nav-button">AI Tutor Demo</PrimaryButton>
+        </Link>
+        <Link to="/creatorsportal">
+          <PrimaryButton className="Nav-button">
+            Creator's Portal Demo
+          </PrimaryButton>
         </Link>
       </div>
     </div>

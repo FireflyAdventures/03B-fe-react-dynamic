@@ -1,12 +1,12 @@
 import * as React from "react";
-import { useContext } from "react";
+//import { useContext } from "react";
 
 // Layouts
-import AuthLayout from "../layouts/Auth";
+//import AuthLayout from "../layouts/Auth";
 import MainLayout from "../layouts/Main";
-import { AuthContext } from "../contexts/auth";
+//import { AuthContext } from "../contexts/auth";
 // Nonauth Views
-import StoryInstructions from "../views/StoryInstructions";
+import CreatorsPortal from "../views/CreatorsPortal";
 // Authenticated Views
 import { Navigate } from "react-router-dom";
 import Storyline from "../views/Storyline";
@@ -47,14 +47,14 @@ const useRoutes = () => {
       key: "/",
     },
     {
-      path: "/storyinstructions",
+      path: "/creatorsportal",
       element: (
         <MainLayout>
-          <StoryInstructions />
+          <CreatorsPortal />
         </MainLayout>
       ),
 
-      key: "/storyInstructions",
+      key: "/creatorsPortal",
     },
     {
       path: "*",

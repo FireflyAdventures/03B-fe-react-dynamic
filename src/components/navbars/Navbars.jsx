@@ -12,15 +12,18 @@ const NavBar = () => {
         <img src={logo} alt="logo" />
       </PrimaryIconButton>
       <div className="NavLink-container">
-        <Link to="/">
+        <Link to="https://www.firefly-adventures.com">
           <PrimaryButton className="Nav-button">Home</PrimaryButton>
         </Link>
-        <Link to="/StoryInstructions">
-          <PrimaryButton className="Nav-button">About Story</PrimaryButton>
-        </Link>
-        s
         <Link to="/storyline">
-          <PrimaryButton className="Nav-button">Story Demo</PrimaryButton>
+          <PrimaryButton className="Nav-button">
+            Educational Game Demo
+          </PrimaryButton>
+        </Link>
+        <Link to="/creatorsportal">
+          <PrimaryButton className="Nav-button">
+            Creator's Portal Demo
+          </PrimaryButton>
         </Link>
       </div>
     </div>

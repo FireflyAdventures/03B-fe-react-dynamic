@@ -4,13 +4,19 @@
     }
   }
 
-  .StoryInstructions {
+  .custom-width-class {
+    width: 50%; /* 50% of the parent container's width */
+    /* or */
+    /*width: 200px; /* 200 pixels wide */
+  }
+
+  .CreatorsPortal {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-.StoryInstructions-header-text {
+.CreatorsPortal-header-text {
   font-size: calc(
     12px + 1.3vw
   ); /* Responsive font size based on viewport width */
@@ -26,7 +32,7 @@
   white-space: nowrap;
 }
 @media screen and (max-width: 880px) {
-  .StoryInstructions-header-text {
+  .CreatorsPortal-header-text {
     font-size: calc(
       8px + 1.3vw
     ); /* Responsive font size based on viewport width */
@@ -34,7 +40,7 @@
   }
 }
 
-.StoryInstructions-mission {
+.CreatorsPortal-mission {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +50,7 @@
   margin: auto;
 }
 
-.StoryInstructions-mission-text {
+.CreatorsPortal-mission-text {
   font-size: calc(
     12px + 1.3vw
   ); /* Responsive font size based on viewport width */
@@ -55,7 +61,7 @@
   margin-bottom: 48px;
 }
 
-.StoryInstructions-text {
+.CreatorsPortal-text {
   font-size: calc(
     10px + 1.3vw
   ); /* Responsive font size based on viewport width */
@@ -66,7 +72,7 @@
   margin-bottom: -32px;
 }
 @media screen and (max-width: 880px) {
-  .StoryInstructions-mission-text {
+  .CreatorsPortal-mission-text {
     font-size: calc(
       8px + 1.3vw
     ); /* Responsive font size based on viewport width */
@@ -74,7 +80,7 @@
   }
 }
 
-.StoryInstructions-header-img-img {
+.CreatorsPortal-header-img-img {
   width: 100%;
   max-width:50rem;
   height: 330px; /* Adjust as needed */
@@ -82,7 +88,7 @@
   object-fit: cover;
 }
 
-.StoryInstructions-header-image-container {
+.CreatorsPortal-header-image-container {
   position: relative;
   overflow: hidden;
   display: grid;
@@ -97,7 +103,7 @@
   );
 }
 
-.StoryInstructions-header-image::after {
+.CreatorsPortal-header-image::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -112,7 +118,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.StoryInstructions-mission-span {
+.CreatorsPortal-mission-span {
   display: flex;
   text-align: left;
   font-family: 'thin', sans-serif;
@@ -124,7 +130,7 @@
   color: rgba(255, 255, 255, 0.828)
 }
 
-.StoryInstructions-header {
+.CreatorsPortal-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;

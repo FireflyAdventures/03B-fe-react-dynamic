@@ -2,7 +2,7 @@
 .Navbar-container {
     position: sticky;
     top: 0;
-    background-color: #4a5568; /* Tailwind class: bg-[#4a5568] */
+    background-color: #0c7513; /* Tailwind class: bg-[#4a5568] */
     color: #fff; /* Tailwind class: text-white */
     padding: 1.5rem; /* Tailwind class: py-6 px-6 */
     display: flex;

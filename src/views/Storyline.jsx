@@ -1,73 +1,33 @@
-import React from "react";
-import "../App.css";
+import React, { useState } from "react";
+import DemoQuestion from "../components/section/DemoQuestion";
+import DemoStory from "../components/section/DemoStory";
+import { Story } from "../constants";
+import SimpleChatPrompt from "../components/section/AiChatbot";
 
-const Storyline = () => {
+const StoryLine = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionChange = (option) => {
+    setSelectedOption(option);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* Bootstrap Container*/}
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">One of three columns</div>
-            <div class="col-sm">One of three columns</div>
-            <div class="col-sm">One of three columns</div>
-          </div>
-        </div>
-        <div className="container-fluid white-bg">
-          <div className="row">
-            <div className="col-md-4">
-              {/* Left Column (4/12 width) */}
-              <h6> TEST TEXT</h6>
-              <div className="row">
-                <div className="col-md-12">
-                  {/* Top Left Square with Image */}
-                  <h6> TEST TEXT</h6>
-                  <div className="image-container">
-                    <img
-                      src="https://storage.googleapis.com/260367420810-us-central1-blueprint-config/firefly-tiered-app/storyassets/helen-wold-01S-cover.png"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  {/* Add other content for the left column */}
-                  <h6> TEST TEXT</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              {/* Middle Column (4/12 width) */}
-              <h6> TEST TEXT</h6>
-              <div className="row">
-                <div className="col-md-12">
-                  {/* Add content for the middle column */}
-                  <h6> TEST TEXT</h6>
-                </div>
-                <div className="col-md-12">
-                  <h6> TEST TEXT</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              {/* Right Column (4/12 width) */}
-              <h6> TEST TEXT</h6>
-              <div className="row">
-                <div className="col-md-12">
-                  {/* Chat Container in the Right Column */}
-                  <h6> TEST TEXT</h6>
-                  <div className="chat-container">
-                    {/* Add chat content here */}
-                    <h6> TEST TEXT</h6>
-                  </div>
-                </div>
-                <div className="col-md-12"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+    <div className="grid grid-cols-4 mt-1 max-w-[65rem] mx-auto h-[75vh] w-full p-2 gap-x-1 overflow-auto">
+      {/*story-line*/}
+      <DemoStory story={Story[0]} />
+      {/*questionaire*/}
+      <DemoQuestion
+        handleOption={handleOptionChange}
+        answer={selectedOption}
+        story={Story[0]}
+      />
+
+      {/*ai chat bot*/}
+      <div className="grid col-span-1 h-[75vh] max-h-[75vh] border-2 border-zinc-800">
+        <SimpleChatPrompt />
+      </div>
     </div>
   );
 };
 
-export default Storyline;
+export default StoryLine;

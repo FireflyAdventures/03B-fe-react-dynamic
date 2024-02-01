@@ -1,4 +1,4 @@
-## Frontend webpages using React and published on a Google Cloud Run container.
+# Frontend webpages using React and published on a Google Cloud Run container.
 
 This interactive page is where the student will interact with the story, the problem, and AI tutor.
 
